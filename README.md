@@ -17,6 +17,7 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 ## Blue
 
 Vulnerability #1: SQL Injection (SQLi)
+    ![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 
 
 Vulnerability #2: 
