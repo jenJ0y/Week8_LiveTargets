@@ -18,7 +18,7 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: SQL Injection (SQLi)
 
-    <a href="https://imgur.com/aGZacVu"><img src="https://i.imgur.com/aGZacVu.gif" title="source: imgur.com" /></a>
+    <img src="https://i.imgur.com/aGZacVu.gif" width="800">
 
 
 Vulnerability #2: 
