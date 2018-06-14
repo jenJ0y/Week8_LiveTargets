@@ -55,7 +55,7 @@ Vulnerability #1: Cross-Site Request Forgery (CSRF)
  * This was one of the more difficult ones for me. I kept having typos which lead to it not working at first.
  When I got it to work, it was a lot easier. 
  * It consists of creating a malicious page which in return allows the user's session to create a request to the database.
- <html>
+ > <html>
   <head>
     <title>This is a Blank Page!</title>
   </head>
